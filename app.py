@@ -14,6 +14,7 @@ from openai import OpenAI
 from datetime import datetime
 import sqlite3
 import pandas as pd
+from dotenv import load_dotenv
 
 # GeoJSON Information - SPAIN
 f = r"esp_maps/ESP_adm2.shp"
@@ -24,14 +25,16 @@ fecha_actual = datetime.now().date()
 
 #Dtabase
 # CHAT-GPT API Key
-credentials_file = "credentials.txt"
+load_dotenv()
+api_key=['OPENAI_API_KEY']
+# credentials_file = "credentials.txt"
 
-if os.path.exists(credentials_file):
-    with open(credentials_file, "r") as file:
-        api_key = file.read().strip()
-        os.environ["OPENAI_API_KEY"] = api_key
-else:
-    raise FileNotFoundError(f"The file {credentials_file} was not found.")
+# if os.path.exists(credentials_file):
+#     with open(credentials_file, "r") as file:
+#         api_key = file.read().strip()
+#         os.environ["OPENAI_API_KEY"] = api_key
+# else:
+#     raise FileNotFoundError(f"The file {credentials_file} was not found.")
 
 
 
