@@ -72,6 +72,7 @@ def Chat():
 
     def consulta(input_usuario):
         consulta = formato.format(question = input_usuario)
+        
         try:
             resultado = cadena.run(consulta)
             return resultado
