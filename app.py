@@ -22,7 +22,7 @@ shapes = shapes.rename(columns={'NAME_2': 'Provincia'})
 shapes['Precio'] = np.round(np.random.uniform(200, 250, len(shapes)), 2)
 fecha_actual = datetime.now().date()
 
-
+#Dtabase
 # CHAT-GPT API Key
 credentials_file = "credentials.txt"
 
