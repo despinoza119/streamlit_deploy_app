@@ -57,7 +57,7 @@ def Chat():
     st.write("¡Bienvenido al ChatBot! Aquí puedes hacer preguntas sobre datos y análisis relacionados con Precios de Cultivos. "
          "Recuerda que el ChatBot está en fase de pruebas, por lo que puede que no tenga respuestas para todas las preguntas.")
 
-    db = SQLDatabase.from_uri("sqlite:///test_prices.db")
+    db = SQLDatabase.from_uri("sqlite:///data/processed/test_prices.db")
     llm = ChatOpenAI(temperature=0,model_name='gpt-3.5-turbo')
     cadena = SQLDatabaseChain(llm = llm, database = db, verbose=False)
     formato = """
@@ -170,7 +170,7 @@ def Dashboards_1():
     elif dashboard_selector == "Series Temporales":
         st.write("Contenido del Dashboard 2")
         # Conectar a la base de datos SQLite
-        conn = sqlite3.connect("test_prices.db")
+        conn = sqlite3.connect("data/processed/test_prices.db")
 
         # Supongamos que tu tabla se llama 'precio_del_cultivo'
         query = "SELECT Fecha, Provincia, Precio FROM precio_del_cultivo WHERE Provincia = 'Madrid'"
