@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from utils import *
+from examples.utils import *
 from langchain_community.embeddings import HuggingFaceEmbeddings 
 from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
