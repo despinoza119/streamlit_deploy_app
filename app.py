@@ -70,6 +70,19 @@ def Chat():
             5. dale una estructura a la respuesta para que sea comoda de leer para el lector
             6. Si no sabes que responder, pregunta al usuario para obtener mas informacion, si no puedes obtener mas informacion, responde con un mensaje de error
             7. Siempre responde en español, y con palabras no tecnicas , un lenguaje cordial
+            La tabla de precios de cultivo tiene las siguientes columnas:
+            producto: Nombre del producto.
+            variedad: Variedad del producto.
+            familia: Familia a la que pertenece el producto.
+            fecha: Fecha en la que se registraron los datos.
+            cantidad: Cantidad de producto.
+            precio: Precio del producto en la fecha especificada.
+            provincia: Provincia donde se registraron los datos.
+            comarca: Comarca dentro de la provincia donde se registraron los datos.
+            id: Identificador único para cada registro.
+            data_source: Fuente de datos que proporcionó la información.
+            Usa esta información para responder a las preguntas de los usuarios.
+            La pregunta del usuario es:
             #{question}
             """
 
