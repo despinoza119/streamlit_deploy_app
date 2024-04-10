@@ -6,7 +6,7 @@
 This project aims to create a chatbot capable of making queries to a transactional database by creating queries to utilize the relevant information found to respond to user-generated queries.
 
 <p align="center">
-  <img src="docs/llm.png" alt="Sample Image" width="400">
+  <img src="chatbot.png" alt="Sample Image" width="400">
 </p>
 
 ## Setup Instructions
